@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faisal's Shawarma Spot</title>
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #d35400;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #hero {
+      background-color: #f39c12;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .menu-item {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .slider {
+      overflow: hidden;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .slider-track {
+      display: flex;
+      width: calc(300px * 6);
+      animation: scroll 20s linear infinite;
+    }
+
+    .slider-track img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    footer {
+      background-color: #d35400;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .slider-track img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Faisal's Shawarma Spot</h1>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Delicious Shawarma, Made Fresh Daily</h2>
+    <p>Order now and taste the difference!</p>
+    <a href="https://wa.me/2348012345678?text=Hi%20Faisal,%20I%20want%20to%20order%20shawarma!" target="_blank" class="whatsapp-button">
+      Order on WhatsApp
+    </a>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="images/shawarma1.jpg.png" alt="Classic Chicken Shawarma" />
+        <h3>Classic Chicken Shawarma</h3>
+        <p>₦3500</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/shawarma2.jpg.png" alt="Beef Shawarma" />
+        <h3>Beef Shawarma</h3>
+        <p>₦2700</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/shawarma11.jpg.png" alt="Lamb with Extra Cheese" />
+        <h3>Lamb with Extra Cheese</h3>
+        <p>₦3000</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/shawarma5.jpg.png" alt="Vegan Shawarma" />
+        <h3>Vegan shawarma</h3>
+        <p>₦3000</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/shawarma7.jpg.png" alt="Family Combo" />
+        <h3>Family Combo</h3>
+        <p>₦10000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We’re a local Abuja-based shawarma joint serving up juicy wraps with bold flavors. Our ingredients are fresh, our sauces are homemade, and our customers are family.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="slider">
+      <div class="slider-track">
+        <img src="images/shawarma1.jpg.png" alt="Classic Shawarma" />
+        <img src="images/shawarma2.jpg.png" alt="Beef Shawarma" />
+        <img src="images/shawarma3.jpg.png" alt="Combo Platter" />
+        <img src="images/shawarma4.jpg.png" alt="Classic Shawarma" />
+        <img src="images/shawarma5.jpg.png" alt="Beef Shawarma" />
+        <img src="images/shawarma9.jpg.png" alt="Combo Platter" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Location: Wuse II, Abuja</p>
+    <p>📞 Phone: +234 801 234 5678</p>
+    <p>📧 Email: faisalshawarma@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Faisal's Shawarma Spot. All rights reserved.</p>
+  </footer>
+</body>
+</html>
